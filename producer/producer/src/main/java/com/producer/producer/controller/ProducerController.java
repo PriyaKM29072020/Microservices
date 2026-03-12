@@ -14,9 +14,5 @@ public class ProducerController {
         System.out.println("hello");
         return "Hello World";
     }
-    @GetMapping("hello")
-    public String hello1() {
-        System.out.println("hello");
-        return "Hello World";
-    }
+
 }
