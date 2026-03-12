@@ -4,10 +4,10 @@ import java.util.function.Predicate;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-PredicationCode predicationCode= new PredicationCode();
+        PredicationCode predicationCode= new PredicationCode();
         Predicate<Integer> predicate=(i)->i<10;
         boolean b = predicationCode.testMth(predicate, 2);
         System.out.println("output of simple Predicate====>>>"+b);
-
+        System.out.println(predicationCode.isEqualsMth(10).test(10));
     }
 }
