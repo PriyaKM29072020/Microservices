@@ -1,15 +1,13 @@
-/*
-package com.edgeserver.edgeserver;
+package com.authorization_server.authorization_server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EdgeserverApplicationTests {
+class AuthorizationServerApplicationTests {
 
 	@Test
 	void contextLoads() {
 	}
 
 }
-*/
