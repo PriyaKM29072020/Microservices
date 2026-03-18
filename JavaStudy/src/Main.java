@@ -1,13 +1,13 @@
-import java.util.function.Predicate;
+import java.util.Arrays;
+import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         PredicationCode predicationCode= new PredicationCode();
-        Predicate<Integer> predicate=(i)->i<10;
-        boolean b = predicationCode.testMth(predicate, 2);
-        System.out.println("output of simple Predicate====>>>"+b);
-        System.out.println(predicationCode.isEqualsMth(10).test(10));
+        List<Integer> intList= Arrays.asList(10,20,30,15,4,5,6,7,0);
+        predicationCode.filterByObjectIndexByAtomic(intList);
+        predicationCode.filterByObjectIndexByIntStream(intList);
     }
 }

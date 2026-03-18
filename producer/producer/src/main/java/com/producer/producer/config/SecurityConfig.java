@@ -22,8 +22,11 @@ public class SecurityConfig {
                         .requestMatchers("/login/**").permitAll()
                         .requestMatchers("/error/**").permitAll()
                         .anyRequest().authenticated()
-                ).oauth2ResourceServer(server -> server
-                        .jwt(Customizer.withDefaults()));
+                )
+
+                //.oauth2ResourceServer(server -> server
+                 //       .jwt(Customizer.withDefaults()))
+        ;
         return http.build();
     }
 }

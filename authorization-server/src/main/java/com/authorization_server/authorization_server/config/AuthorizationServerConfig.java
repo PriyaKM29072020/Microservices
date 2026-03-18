@@ -102,10 +102,9 @@ public class AuthorizationServerConfig {
                         exceptions.authenticationEntryPoint(new LoginUrlAuthenticationEntryPoint("/login"))
                 )
                 .oauth2ResourceServer(t -> t.jwt(Customizer.withDefaults()));
-
         return http.build();
     }
-
+//app register
     @Bean
     public RegisteredClientRepository registeredClientRepository() {
         RegisteredClient writerClient = RegisteredClient.withId(UUID.randomUUID().toString())

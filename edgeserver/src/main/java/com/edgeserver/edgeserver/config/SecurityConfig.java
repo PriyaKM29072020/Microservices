@@ -47,9 +47,16 @@ public class SecurityConfig {
                         .requestMatchers("/oauth2/**").permitAll()
                         .requestMatchers("/login/**").permitAll()
                         .requestMatchers("/error/**").permitAll()
-                        .anyRequest().authenticated()
-                ).oauth2ResourceServer(server -> server
-                        .jwt(Customizer.withDefaults()));
+                        .anyRequest().authenticated())
+                .oauth2ResourceServer(server -> server
+                .jwt(Customizer.withDefaults()));
+                /*.oauth2Login(oauth -> oauth
+                .loginPage("/login")
+                .defaultSuccessUrl("/home", true)
+        );*/
+
+
+               ;
         return http.build();
     }
 }
