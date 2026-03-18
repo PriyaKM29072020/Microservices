@@ -37,4 +37,14 @@ public Predicate<Integer> isEqualsMth(Integer input2){
                 .mapToObj(t::get)
                 .forEach(System.out::println);
     }
+    //Custom Filter Functions
+    public static boolean filterByCustomProperties(String s)
+    {
+        if (s.length() <= 1)
+            return true;
+        else
+            return (s.charAt(0) == s.charAt(s.length() - 1))
+                    && palindrome(
+                    s.substring(1, s.length() - 1));
+    }
 }
