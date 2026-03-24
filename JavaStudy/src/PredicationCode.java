@@ -38,13 +38,11 @@ public Predicate<Integer> isEqualsMth(Integer input2){
                 .forEach(System.out::println);
     }
     //Custom Filter Functions
-    public static boolean filterByCustomProperties(String s)
+    public  <T> boolean filterByCustomProperties(int t)
     {
-        if (s.length() <= 1)
-            return true;
-        else
-            return (s.charAt(0) == s.charAt(s.length() - 1))
-                    && palindrome(
-                    s.substring(1, s.length() - 1));
+       if( t% 2==0){
+           return Boolean.TRUE;
+       }
+       return Boolean.FALSE;
     }
 }
