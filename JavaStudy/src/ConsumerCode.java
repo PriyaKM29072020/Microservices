@@ -8,12 +8,14 @@ public class ConsumerCode {
         andThen(Consumer<? super T> after)
     *
     * */
-void acceptWith(List<Integer>lst)
+    static void  acceptWith(List<Integer>lst)
 {
     Consumer<List<Integer>> consumer=list->{
         list.replaceAll(integer -> 2 * integer);
     };
     consumer.accept(lst);
 }
+    public static void main(String[] args) {
 
+    }
 }
