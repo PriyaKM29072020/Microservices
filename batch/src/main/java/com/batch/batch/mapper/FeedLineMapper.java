@@ -1,4 +1,4 @@
-package com.batch.batch.reader;
+package com.batch.batch.mapper;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
