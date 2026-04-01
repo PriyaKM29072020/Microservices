@@ -17,7 +17,9 @@ import org.springframework.beans.factory.annotation.Value;
 public class FeedExcelMapper implements RowMapper<FeedRecord>  {
     @Value("${delimiter}")
 private String delimiter;
+    @Value("${header}")
 private String header;
+    @Value("${fileExtension}")
 private String fileExtension;
 
     @Override
