@@ -1,4 +1,4 @@
-package com.consumer.consumer.event;
+package com.producer.producer.event;
 
 
 import tools.jackson.databind.annotation.JsonSerialize;

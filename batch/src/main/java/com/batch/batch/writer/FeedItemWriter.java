@@ -7,17 +7,17 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class FeedItemWriter implements ItemWriter<FeedRecord> {
     @Value("${delimiter}")
-    private String delimiter;
+    private final String delimiter;
     @Value("${header}")
-    private String header;
+    private final String header;
     @Value("${fileExtension}")
-    private String fileExtension;
+    private final String fileExtension;
     @Value("${delimiter}")
-    private String delimiter;
+    private final String delimiter;
     @Value("${header}")
-    private String header;
+    private final String header;
     @Value("${fileExtension}")
-    private String fileExtension;
+    private final String fileExtension;
 
 
     @Override

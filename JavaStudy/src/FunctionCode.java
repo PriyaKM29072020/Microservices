@@ -20,13 +20,13 @@ identity()
     //(after call )
     public Integer andThenMth(Integer i){
 
-        Function <Integer,Integer> function=j->(int)j/3;
+        Function <Integer,Integer> function=j-> j /3;
         Function <Integer,Integer> function1=j->j*2;
       return   function.andThen(function1).apply(i);
     }
     //(before call )
     public Integer composeMth(Integer i){
-        Function <Integer,Integer> function=j->(int)j/3;
+        Function <Integer,Integer> function=j-> j /3;
         Function <Integer,Integer> function1=j->j*2;
         return   function.compose(function1).apply(i);
     }

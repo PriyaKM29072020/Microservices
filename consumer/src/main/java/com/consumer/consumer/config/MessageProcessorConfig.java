@@ -22,13 +22,12 @@ public class MessageProcessorConfig {
                 case CREATE:
                     String product = event.getData();
                     LOG.info("Create  with ID: {}",product );
-                   // productService.createProduct(product).block();
+
                     break;
 
                 case DELETE:
                     int key =event.getKey() ;
                     LOG.info("Delete product with ProductID: {}", key);
-                   // productService.deleteProduct(productId).block();
                     break;
 
                 default:

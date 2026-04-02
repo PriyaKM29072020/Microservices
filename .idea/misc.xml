@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/sd/pom.xml" />
         <option value="$PROJECT_DIR$/authorization-server/pom.xml" />
         <option value="$PROJECT_DIR$/batch/pom.xml" />
+        <option value="$PROJECT_DIR$/util/pom.xml" />
+        <option value="$PROJECT_DIR$/producer/pom.xml" />
       </list>
     </option>
   </component>
