@@ -8,15 +8,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sd" />
+        <module name="producer1" />
         <module name="util" />
         <module name="edgeserver" />
         <module name="authorization-server" />
         <module name="batch" />
-        <module name="producer" />
         <module name="configserver" />
-        <module name="consumer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer" target="17" />
+      <module name="consumer2" target="17" />
+      <module name="demo1" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -24,8 +28,10 @@
       <module name="batch" options="-parameters" />
       <module name="configserver" options="-parameters" />
       <module name="consumer" options="-parameters" />
+      <module name="consumer2" options="-parameters" />
+      <module name="demo1" options="-parameters" />
       <module name="edgeserver" options="-parameters" />
-      <module name="producer" options="-parameters" />
+      <module name="producer1" options="-parameters" />
       <module name="sd" options="-parameters" />
       <module name="util" options="-parameters" />
     </option>
